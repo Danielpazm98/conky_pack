@@ -1,0 +1,49 @@
+use_xft yes
+xftfont Roboto:size=9
+xftalpha 0.8
+update_interval 5
+total_run_times 0
+
+own_window yes
+#own_window_transparent yes
+own_window_type normal
+own_window_argb_visual yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+
+##############################################
+double_buffer yes
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+stippled_borders 0
+border_margin 0
+border_width 0
+default_color EDEBEB
+default_shade_color 000000
+default_outline_color 000000
+alignment bottom_left
+minimum_size 0 0
+maximum_width 900
+gap_x 0
+gap_y 0
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+net_avg_samples 2
+short_units yes
+text_buffer_size 2048
+use_spacer none
+override_utf8_locale yes
+color1 212021
+color2 E8E1E6
+color3 E82A2A
+own_window_argb_value 0
+own_window_colour 000000
+
+TEXT
+${offset 10}${voffset 0}${font GeosansLight:size=25} Today${font GeosansLight:size=0}
+${offset 20}${voffset 0}${font GeosansLight:light:size=70}${time %I:%M}${font GeosansLight:size=0}
+${offset 35}${voffset 10}${font GeosansLight:size=17}${time %A, %d %B}${font GeosansLight:size=0}
+${offset 0}${voffset 0}${image ~/.conky/flair-light-conky/flair.png -p 260,0 -s 3x189}${font GeosansLight:size=0}
+${offset 261}${font GeosansLight:size=15}
